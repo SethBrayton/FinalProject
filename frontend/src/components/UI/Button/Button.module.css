@@ -1,0 +1,121 @@
+.cat_header_button {
+    border-radius: 5px;
+    border: 2px solid #393;
+    background: #393;
+    padding: 15px 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sale_btn {
+    width: 155px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px 50px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sale_btn:hover {
+    transition: all 0.3s ease 0s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(160, 160, 160, 0.055) 0px 15px 12px;
+    background: #ffffff;
+}
+
+.cat_btn {
+    /* width: 120px;
+    height: 30px; */
+    border: 2px solid #8b8b8b;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #8b8b8b;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add_cart_btn {
+    width: 90%;
+    background: #f1fff1;
+    border: 2px solid #339933;
+    border-radius: 21px;
+    padding: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #339933;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s opacity, 0.7s visibility;
+  }
+
+.cart_btn {
+    max-width: 300px;
+    background: #339933;
+    border: 2px solid #339933;
+    border-radius: 10px;
+    padding: 25px 45px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.order_button {
+  background: #339933;
+  border-radius: 17px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background, color;
+  transition-duration: 0.5s;
+}
+
+.submit_button {
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ffffff;
+  outline: none;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+}
+.submit_button:active {
+  background-color: #67d46782;
+}
+
+@media (max-width: 800px) {
+  .cat_header_button {
+    display: none;
+  }
+  .submit_button {
+    font-size: 18px;
+}
+}
+@media (max-width: 380px) {
+  .submit_button {
+    width: 85%;
+  }
+}

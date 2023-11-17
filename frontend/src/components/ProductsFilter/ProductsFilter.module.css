@@ -1,0 +1,72 @@
+.form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+  }
+  .label {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .from_to_prices,
+  .checkbox,
+  .filter_by {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .from_to_prices input {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .from_to_prices input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: #acacac;
+  }
+  
+  .checkbox input {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .filter_by select {
+    border: 1px solid #000000;
+    border-radius: 7px;
+    width: 220px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #797979;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 800px) {
+    .label {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .from_to_prices input {
+      width: 70px;
+    }
+    .filter_by select {
+      width: 120px;
+    }
+  }
+  @media (max-width: 380px) {
+    .from_to_prices input,
+    .filter_by select {
+      width: 50%;
+    }
+    .form {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }

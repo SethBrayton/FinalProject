@@ -1,0 +1,23 @@
+ .empty_card_box {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    align-content: center;
+  }
+
+  .empty_cart_txt {
+    font-size: 40px;
+  }
+
+  @media (max-width: 800px) {
+    .empty_card_box {
+      min-height: 400px;
+    }
+    .empty_cart_txt {
+      font-size: 25px;
+    }
+  }
+

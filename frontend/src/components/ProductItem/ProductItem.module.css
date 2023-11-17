@@ -1,0 +1,124 @@
+.product_item {
+    padding-bottom: 10px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: auto repeat(2, 1fr);
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  .product_picture {
+    display: flex;
+    align-items: center;
+  }
+  .product_item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .price_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .discount_price,
+  .normal_price {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .normal_price {
+    padding: 0 10px;
+  }
+  .price {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: #8b8b8b;
+  }
+  .percent {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ff32a1;
+  }
+  .product_name {
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .dollar {
+    font-size: 22px;
+  }
+  
+  .product_picture {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .cart_web_button {
+    width: 90%;
+    background: #f1fff1;
+    border: 2px solid #339933;
+    border-radius: 21px;
+    padding: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #339933;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s opacity, 0.7s visibility;
+  }
+  .product_item:hover .cart_web_button {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cart_mobile_button {
+    display: none;
+  }
+
+
+  @media (max-width: 800px) {
+    .product_item img {
+      height: 250px;
+    }
+    .discount_price,
+    .normal_price {
+      font-size: 25px;
+    }
+    .price,
+    .percent {
+      font-size: 16px;
+    }
+  }
+ 
+  @media (max-width: 380px) {
+    .product_item {
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        
+    }
+    .product_item img {
+      width: 95%;
+      height: 250px;
+      border-radius: 5px;
+    }
+    .cart_web_button {
+      display: none;
+    }
+    .cart_mobile_button {
+      display: block;
+      color: #f1fff1;
+      background-color: #339933;
+      display: block;
+      width: 50%;
+      border-radius: 21px;
+      padding: 10px;
+      cursor: pointer;
+      margin: 0 auto;
+      border: none;
+    }
+  }

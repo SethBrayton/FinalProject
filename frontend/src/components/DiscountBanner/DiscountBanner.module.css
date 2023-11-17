@@ -1,0 +1,168 @@
+.container {
+    width: 100%;
+    background: linear-gradient(263deg, #393 -0.43%, #006300 104.36%);
+    margin: 0 auto;
+  }
+  .discount_form {
+    max-width: 1380px;
+    margin: 20px auto;
+    height: 476px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .gnome_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .gnome {
+    max-width: 422px;
+    max-height: 422px;
+    
+  }
+
+  .discount_text_container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .form_container {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .discount_text {
+    font-weight: 700;
+    font-size: 55px;
+    color: #ffffff;
+    align-self: self-start;
+  }
+  .discount_text span {
+    font-size: 80px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input_tel {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 25px;
+    color: #6c6c6c;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+  }
+  .input_tel::placeholder {
+    color: #a0a0a09b;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+
+  .required_text {
+    width: 100%;
+    padding-top: 5px;
+    color: rgb(206, 206, 206);
+    font-size: 16px;
+    text-align: center;
+  }
+ 
+  .notification {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .notif_icon {
+    width: 200px;
+  }
+  .notif_text {
+    color: #ffffff;
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 1000px) {
+    .discount_text {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 800px) {
+    .gnome_container {
+      display: none;
+    }
+    .discount_text_container {
+      width: 90%;
+    }
+    .form_container {
+      margin: 0 auto;
+      align-items: center;
+    }
+    .discount_text {
+      font-size: 40px;
+      text-align: center;
+    }
+    .discount_form {
+      width: 90%;
+    }
+    .discount_text span {
+      font-size: 65px;  
+    }
+    .input_tel,
+    .submit_btn {
+      font-size: 18px;
+    }
+    .input_tel {
+      height: 70px;
+    }
+    .required_text {
+      padding-top: 10px;
+      font-size: 13px;
+    }
+    .notif_text {
+      inline-size: 200px;
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 380px) {
+    .input_tel,
+    .submit_btn {
+      width: 85%;
+    }
+    .discount_text {
+      align-self: center;
+      text-align: center;
+    }
+    .gnome {
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    .discount_text {
+      font-size: 35px;
+    }
+    .discount_text span {
+      font-size: 55px;
+    }
+  }
